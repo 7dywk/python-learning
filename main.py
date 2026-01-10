@@ -425,6 +425,77 @@
 Вход: s = 'aaaabbcaa'
 Выход: 'a4b2c1a2'
 '''
+# сам не зробив
+# s = 'aaaabbcaa'
+# new_s = ''
+# i = 0
+# while i < len(s):
+#     ch = s[i]
+#     new_s += ch
+#     count = 0
+#     while i < len(s) and s[i] == ch:
+#         count += 1
+#         i += 1
+#     new_s += str(count)
+# print(new_s)
+
+'''
+3) На основании предоставленного отрывка текста определить 3 наиболее часто встречаемых символа в нем. 
+Пробелы нужно игнорировать (не учитывать при подсчете). 
+Для выведения результатов вычислений требуется написать функцию top3(st). 
+Итог работы функции представить в виде строки: «символ – количество раз, символ – количество раз…».
+'''
+
+# def foo (s):
+#     result_lst = []
+#     d = {}
+#     for char in s:
+#         if char == ' ':
+#             continue
+#         if char in d:
+#             d[char] += 1
+#         else:
+#             d[char] = 1
+#     for key, value in d.items():
+#         result_lst.append (f'{key} - {value}')
+#     return ', '.join(result_lst)
+# s = str(input('enter words: '))
+# print(foo(s))
 
 
+# dict = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6}
+# def foo ():
+#     for key, value in dict.items():
+#         print (key, '-', value)
+# foo()
 
+'''
+4) Дмитрий считает, что когда текст пишут в скобках 
+(как вот тут, например), его читать не нужно. 
+Вот и надумал он существенно укоротить время чтения, 
+написав функцию, которая будет удалять все, что расположено внутри скобок.
+'''
+
+# def text(s):
+#     start = s.find('(')
+#     end = s.find(')')
+#     new_s = s[:start] + s[end + 1:].strip()
+#     return new_s
+# s = input('Enter text:')
+# result = text(s)
+# print(result)
+
+# def remove_brackets(text):
+#     result = ''
+#     inside = False
+#     for char in text:
+#         if char == '(':
+#             inside = True
+#         elif char == ')':
+#             inside = False
+#         elif not inside:
+#             result += char
+#     return result
+#
+# text = input('Enter the text:')
+# print(remove_brackets(text))
