@@ -49,61 +49,61 @@
 #
 # max_num()
 
-input_str = input("Введіть числа через пробіл: ")
-num_list = [int(x) for x in input_str.split()]
-print(num_list)
-
-
-def entered_num():
-    n = int(input("Любе число: "))
-    gre = 0
-    sim = 0
-    low = 0
-    for i in num_list:
-        if i == n:
-            sim += 1
-        elif i > n:
-            gre += 1
-        elif i < n:
-            low += 1
-    return sim, low, gre
-
-
-sim, low, gre = entered_num()
-print("кількість чисел які дорівнюють вашому: ",sim,
-      "кількість чисел менших за ваше:", low,
-      "кількість чисел більших за ваше:", gre)
-
-
-def min_num():
-    min_value = num_list[0]
-    min_index = 0
-
-    for idx, value in enumerate(num_list):
-        if value < min_value:
-            min_value = value
-            min_index = idx
-
-    return min_value, min_index
-
-
-def max_num():
-    max_value = num_list[0]
-    max_index = 0
-
-    for idx, value in enumerate(num_list):
-        if value > max_value:
-            max_value = value
-            max_index = idx
-
-    return max_value, max_index
-
-
-mn, mi = min_num()
-print("мін число:", mn, "індекс:", mi)
-
-mx, xi = max_num()
-print("макс число:", mx, "індекс:", xi)
+# input_str = input("Введіть числа через пробіл: ")
+# num_list = [int(x) for x in input_str.split()]
+# print(num_list)
+#
+#
+# def entered_num():
+#     n = int(input("Любе число: "))
+#     gre = 0
+#     sim = 0
+#     low = 0
+#     for i in num_list:
+#         if i == n:
+#             sim += 1
+#         elif i > n:
+#             gre += 1
+#         elif i < n:
+#             low += 1
+#     return sim, low, gre
+#
+#
+# sim, low, gre = entered_num()
+# print("кількість чисел які дорівнюють вашому: ",sim,
+#       "кількість чисел менших за ваше:", low,
+#       "кількість чисел більших за ваше:", gre)
+#
+#
+# def min_num():
+#     min_value = num_list[0]
+#     min_index = 0
+#
+#     for idx, value in enumerate(num_list):
+#         if value < min_value:
+#             min_value = value
+#             min_index = idx
+#
+#     return min_value, min_index
+#
+#
+# def max_num():
+#     max_value = num_list[0]
+#     max_index = 0
+#
+#     for idx, value in enumerate(num_list):
+#         if value > max_value:
+#             max_value = value
+#             max_index = idx
+#
+#     return max_value, max_index
+#
+#
+# mn, mi = min_num()
+# print("мін число:", mn, "індекс:", mi)
+#
+# mx, xi = max_num()
+# print("макс число:", mx, "індекс:", xi)
 
 
 
