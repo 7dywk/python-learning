@@ -71,17 +71,11 @@ class Astronaut():
 mark = Astronaut("Марк")
 
 print(mark)
-# Astronaut Марк stats: oxygen=100, energy=100
 
 mark.work(5)
-# [Work] Марк worked 5 hours.
 print(mark)
-# Astronaut Марк stats: oxygen=75, energy=50
 
 mark.sleep()
-# [Rest] Марк had a sleep. Energy renewed.
 print(mark)
-# Astronaut Марк stats: oxygen=65, energy=100
 
-# Змушуємо працювати 12 годин, щоб енергія впала в мінус
 mark.work(12)
