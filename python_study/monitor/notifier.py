@@ -1,8 +1,8 @@
 import requests
 
 
-BOT_TOKEN = "8861495057:AAHft2PCpdZjhgj19GpSGazTt0ysQEToVHs"
-CHAT_ID = "952886910"
+BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN_HERE"
+CHAT_ID = "YOUR_CHAT_ID_HERE"
 
 def send_message(listings):
     for item in listings:
