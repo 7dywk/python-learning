@@ -2,13 +2,14 @@ import os
 import json
 
 
-def load_old(filename="listings.json"):
+def load_old(filename="results/listings.json"):
     if os.path.exists(filename):
         with open(filename, "r") as f:
             return json.load(f)
     return []
 
-def save(data, filename="listings.json"):
+def save(data, filename="results/listings.json"):
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, "w") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 

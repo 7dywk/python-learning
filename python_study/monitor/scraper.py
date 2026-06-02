@@ -22,15 +22,17 @@ def get_listings():
         all_listings = page.locator("[data-testid='l-card']").all()
         scraped_data = []
         for listing in all_listings:
-            title = listing.locator("[data-testid='ad-card-title']").text_content()
-            price = listing.locator("[data-testid='ad-price']").text_content()
-            link_raw = listing.locator("a").first.get_attribute("href")
-            link = f"https://www.olx.pl{link_raw}" if link_raw.startswith("/") else link_raw
-            scraped_data.append({
-                "title": title,
-                "price": price,
-                "link": link
-            })
-        for item in scraped_data:
-            print(item)
+            try:
+                title = listing.locator("[data-testid='ad-card-title']").text_content()
+                price = listing.locator("[data-testid='ad-price']").text_content()
+                link_raw = listing.locator("a").first.get_attribute("href")
+                link = f"https://www.olx.pl{link_raw}" if link_raw.startswith("/") else link_raw
+                scraped_data.append({
+                    "title": title,
+                    "price": price,
+                    "link": link
+                })
+            except:
+                continue
+        return scraped_data
 
