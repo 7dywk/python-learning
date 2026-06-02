@@ -1,8 +1,11 @@
 import requests
+import os
+from dotenv import load_dotenv
 
 
-BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN_HERE"
-CHAT_ID = "YOUR_CHAT_ID_HERE"
+load_dotenv()
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 
 def send_message(listings):
     for item in listings:
