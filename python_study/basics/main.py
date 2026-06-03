@@ -501,16 +501,4 @@
 # print(remove_brackets(text))
 
 
-raw_data = [
-    {"name": "Apple iPhone 14", "price": "999.99$", "rating": "4.5"},
-    {"name": "Samsung TV", "price": "abc", "rating": "5.1"},
-    {"name": "", "price": "599zł", "rating": "3.8"},
-    {"name": "Sony Headphones", "price": None, "rating": ""},
-    {"name": "Dell Laptop", "price": "1,299.00€", "rating": "4.2"},
-]
-for item in raw_data:
-    name = item["name"]
-    if name:
-        print('not empty')
-    else:
-        print('empty')
+

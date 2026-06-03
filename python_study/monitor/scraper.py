@@ -18,6 +18,7 @@ def get_listings():
         page.locator("[data-testid='search-submit']").click()
         page.locator("[data-testid='sorting-wrapper']").click()
         page.locator("[title='Najnowsze']").click()
+        page.wait_for_timeout(2000)
         page.wait_for_selector("[data-testid='l-card']")
         all_listings = page.locator("[data-testid='l-card']").all()
         scraped_data = []
@@ -27,6 +28,7 @@ def get_listings():
                 price = listing.locator("[data-testid='ad-price']").text_content()
                 link_raw = listing.locator("a").first.get_attribute("href")
                 link = f"https://www.olx.pl{link_raw}" if link_raw.startswith("/") else link_raw
+                link = link.split("?")[0].split("#")[0]
                 scraped_data.append({
                     "title": title,
                     "price": price,
