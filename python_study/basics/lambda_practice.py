@@ -24,3 +24,9 @@ sorted_products3 = [p for p in products if p["price"] < 700]
 
 for product in sorted_products3:
     print(f'{product["name"]} | {product["price"]} | {product["rating"]}')
+
+print(f'-' * 50)
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 18, 21, 24]
+result = filter(lambda num: num % 2 == 0, numbers)
+print(list(result))
