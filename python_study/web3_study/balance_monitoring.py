@@ -16,3 +16,5 @@ while True:
         previous_balance = balance
         print(f"Old: {eth_old} ETH")
         print(f"New: {eth_new} ETH")
+        diff = w3.from_wei(abs(balance - previous_balance), "ether")
+        print(f"Change: {diff} ETH")
