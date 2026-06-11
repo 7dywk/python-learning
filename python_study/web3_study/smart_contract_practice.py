@@ -16,6 +16,12 @@ abi = [
         "name": "totalSupply",
         "outputs": [{"type": "uint256"}],
         "type": "function"
+    },
+    {
+        "inputs": [{"name": "account", "type": "address"}],
+        "name": "balanceOf",
+        "outputs": [{"type": "uint256"}],
+        "type": "function"
     }
 ]
 
@@ -25,3 +31,10 @@ result1 = contract.functions.name().call()
 result2 = contract.functions.totalSupply().call()
 clean_result = result2 / 10**6
 print(f"{result1}\n{clean_result}")
+
+print("-"*50)
+
+wallet_to_check = w3.to_checksum_address("0x28C6c06298d514Db089934071355E5743bf21d60")
+raw_balance = contract.functions.balanceOf(wallet_to_check).call()
+balance = raw_balance / 10**6
+print(balance)
