@@ -31,6 +31,10 @@ logs = contract.events.Swap().get_logs(
 
 for log in logs:
     args = log['args']
-    print(f"block: {log['blockNumber']} \nSender: {args['sender']} \nEth in: {args['amount1In']/10**18} \nUsdc out: {args['amount0Out']/10**6} \n{'-'*50}")
+    print(f"block: {log['blockNumber']} "
+          f"\nSender: {args['sender']} "
+          f"\nEth in: {args['amount1In']/10**18} "
+          f"\nUsdc out: {args['amount0Out']/10**6} "
+          f"\n{'-'*50}")
 
 
