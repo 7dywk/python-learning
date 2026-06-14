@@ -1,7 +1,6 @@
 from web3 import Web3
 
-alchemy_url = "https://eth-mainnet.g.alchemy.com/v2/RXNzDG6oGSliYWM0F6HWs"
-w3 = Web3(Web3.HTTPProvider(alchemy_url))
+w3 = Web3(Web3.HTTPProvider("https://rpc.ankr.com/eth/0b6736fcc614daa2d430206c00e47ba9f2541f0865d91d728f7b230abc03abba"))
 
 abi = [
     {
@@ -26,11 +25,12 @@ latest_block = w3.eth.block_number
 contract = w3.eth.contract(address=address, abi=abi)
 
 logs = contract.events.Swap().get_logs(
-    from_block=latest_block - 8,
+    from_block=latest_block - 50,
     to_block=latest_block
 )
 
 for log in logs:
-    print(log)
+    args = log['args']
+    print(f"block: {log['blockNumber']} \nSender: {args['sender']} \nEth in: {args['amount1In']/10**18} \nUsdc out: {args['amount0Out']/10**6} \n{'-'*50}")
 
 
