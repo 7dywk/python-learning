@@ -25,14 +25,22 @@ contract = w3.eth.contract(address=address, abi=abi)
 last_block = w3.eth.block_number
 
 while True:
-    current_block = w3.eth.block_number
-    if current_block > last_block:
-        logs = contract.events.Swap().get_logs(
-            from_block=last_block,
-            to_block=current_block,
-        )
-        for log in logs:
-            args = log["args"]
-            print(args)
-        last_block = current_block
+    try:
+        current_block = w3.eth.block_number
+        if current_block > last_block:
+            logs = contract.events.Swap().get_logs(
+                from_block=last_block + 1,
+                to_block=current_block,
+            )
+            for log in logs:
+                args = log["args"]
+                eth_sold = args["amount1In"] / 10**18
+                eth_bought = args["amount1Out"] / 10**18
+                if eth_sold > 10:
+                    print(f"{args['sender']} sold {eth_sold} ETH")
+                elif eth_bought > 10:
+                    print(f"{args['sender']} bought {eth_bought} ETH")
+            last_block = current_block
+    except Exception as e:
+        print(f"Network error: {e}")
     time.sleep(12)
