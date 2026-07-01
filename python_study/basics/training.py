@@ -46,4 +46,25 @@ with open("../test_data/users.csv", "w", newline="") as f:
         writer.writerow([item["name"], item["email"]])
 
 
+students = [
+    {"name": "Anna", "grade": 85, "city": "Kyiv"},
+    {"name": "Ivan", "grade": 42, "city": "Lviv"},
+    {"name": "Maria", "grade": 91, "city": "Kyiv"},
+    {"name": "Petro", "grade": 58, "city": "Odesa"},
+    {"name": "Olena", "grade": 76, "city": "Kyiv"},
+]
 
+filtered_students = [lst['name'] for lst in students if lst['city'] == 'Kyiv']
+for item in filtered_students:
+    print(item)
+print("-"*50)
+
+filtered_students_2 = [lst for lst in students if lst['grade'] > 70]
+for lst in filtered_students_2:
+    print(lst)
+
+print("-"*50)
+
+filtered_students_3 = [f'{lst["name"]} – {lst["grade"]}' for lst in students]
+for i in filtered_students_3:
+    print(i)
