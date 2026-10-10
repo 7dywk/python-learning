@@ -1,0 +1,163 @@
+{
+  "site": {
+    "order": "#contact"
+  },
+  "stats": {
+    "ctr": "+13.4%",
+    "views": "30M+",
+    "speed": "24"
+  },
+  "lottie": {
+    "bento": ""
+  },
+  "tools": [
+    {
+      "name": "Photoshop",
+      "short": "Ps",
+      "icon": ""
+    }
+  ],
+  "works": [
+    {
+      "title": "5 Steps to Learn How to Analyze the Market",
+      "cat": "Business & Crypto",
+      "views": "230K",
+      "img": "assets/work_AgACAgIA.jpg"
+    },
+    {
+      "title": "Our New Golf Course",
+      "cat": "IRL / Vlogs",
+      "views": "1.2M",
+      "img": "assets/irl_1.jpg"
+    },
+    {
+      "title": "Rebuilding My Wardrobe with only Marshall’s",
+      "cat": "IRL / Vlogs",
+      "views": "1.7M",
+      "img": "assets/after_2.jpg"
+    },
+    {
+      "title": "A Whole Day Together",
+      "cat": "IRL / Vlogs",
+      "views": "800K",
+      "img": "assets/after_3.jpg"
+    },
+    {
+      "title": "NEVER Say THIS When Pulled Over By Police!",
+      "cat": "IRL / Vlogs",
+      "views": "860K",
+      "img": "assets/irl_2.jpg"
+    },
+    {
+      "title": "I Tried the New Gordon Ramsay Hell's Kitchen Restaurant",
+      "cat": "IRL / Vlogs",
+      "views": "540K",
+      "img": "assets/irl_3.png"
+    },
+    {
+      "title": "The Most Dangerous Robot Ever Created",
+      "cat": "IRL / Vlogs",
+      "views": "1.1M",
+      "img": "assets/irl_4.jpg"
+    },
+    {
+      "title": "My drone filmed Rumi from Kpop Demon Hunters vs Squishy Dumpling in real life!",
+      "cat": "IRL / Vlogs",
+      "views": "720K",
+      "img": "assets/irl_5.jpg"
+    },
+    {
+      "title": "Do Not Squeeze Squishies at 3am",
+      "cat": "IRL / Vlogs",
+      "views": "1.5m",
+      "img": "assets/irl_6.jpg"
+    },
+    {
+      "title": "I Ate at Chaiiwala Every Day for 1 Week",
+      "cat": "IRL / Vlogs",
+      "views": "450K",
+      "img": "assets/irl_7.jpg"
+    },
+    {
+      "title": "Stopped by TCC? Do THIS in the First Minutes",
+      "cat": "IRL / Vlogs",
+      "views": "550K",
+      "img": "assets/after_1.jpg"
+    },
+    {
+      "title": "I made 20 ugly outfits",
+      "cat": "IRL / Vlogs",
+      "views": "660K",
+      "img": "assets/irl_8.jpg"
+    },
+    {
+      "title": "I spent 7,000 hours looking at charts",
+      "cat": "Business & Crypto",
+      "views": "980K",
+      "img": "assets/fin_1.jpg"
+    },
+    {
+      "title": "Say THIS to Shut Down Any Power Game",
+      "cat": "Business & Crypto",
+      "views": "720K",
+      "img": "assets/fin_4.jpg"
+    },
+    {
+      "title": "There will be no financial assistance",
+      "cat": "Business & Crypto",
+      "views": "360K",
+      "img": "assets/fin_3.jpg"
+    },
+    {
+      "title": "How to Build an Agency Business in 2025",
+      "cat": "Business & Crypto",
+      "views": "170K",
+      "img": "assets/fin_5.jpg"
+    },
+    {
+      "title": "Scammers Are ALREADY Taking Out a Loan IN YOUR NAME!",
+      "cat": "Business & Crypto",
+      "views": "270K",
+      "img": "assets/fin_2.jpg"
+    }
+  ],
+  "compare": [
+    {
+      "title": "IRL / Vlogs",
+      "before": "assets/before_4.png",
+      "after": "assets/irl_8.jpg"
+    },
+    {
+      "title": "IRL / Vlogs",
+      "before": "assets/before_2.jpg",
+      "after": "assets/after_2.jpg"
+    },
+    {
+      "title": "IRL / Vlogs",
+      "before": "assets/before_3.jpg",
+      "after": "assets/after_3.jpg"
+    }
+  ],
+  "socials": [
+    {
+      "name": "Telegram",
+      "url": "https://t.me/obla0chko",
+      "handle": "@obla0chko"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://x.com/obla0chko",
+      "handle": "@obla0chko"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/obla0chko.dsgn/",
+      "handle": "@obla0chko.dsgn"
+    },
+    {
+      "name": "Behance",
+      "url": "https://www.behance.net/def70fbe",
+      "handle": "def70fbe"
+    }
+  ]
+}
